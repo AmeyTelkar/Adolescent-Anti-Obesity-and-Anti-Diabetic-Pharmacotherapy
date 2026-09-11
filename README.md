@@ -51,7 +51,6 @@ This study provides a comprehensive assessment combining broad adolescent medica
 │   ├── 16 Columns Leakage with Source Quarter/
 │   │   ├── Target_Leakage_and_Accuracy_Drop.docx
 │   │   └── ...
-│   └── *.zip                                  # Pre-packaged archives for each dataset model
 ├── Submission_Figures/
 │   ├── Fig1.eps / Fig1.png                     # STROBE-compliant study flowchart
 │   ├── Fig2.eps / Fig2.png                     # SOC-level AE distribution bar chart
