@@ -168,7 +168,7 @@ This study provides a comprehensive assessment combining broad adolescent medica
 ## How to Reproduce
 
 1. **Data**: Download quarterly FAERS ASCII files from [FDA FAERS](https://www.fda.gov/drugs/questions-and-answers-fdas-adverse-event-reporting-system-faers/fda-adverse-event-reporting-system-faers-public-dashboard) for 2021Q1–2025Q4.
-2. **Preprocessing**: Follow the pipeline specification in S4 Table (deduplication, age filtering, drug normalisation, MedDRA coding).
+2. **Preprocessing**: Follow the pipeline specification in S4 Table (deduplication, age filtering, drug normalisation, MedDRA coding). *Note: MedDRA version 26.0 was used for this study. Due to proprietary licensing by the MSSO, the MedDRA Desktop Browser cannot be distributed in this repository. Researchers must obtain a valid license from [MedDRA (MSSO)](https://www.meddra.org/) to reproduce the exact coding.*
 3. **Signal detection**: Apply four disproportionality methods (ROR, PRR, IC, EBGM) as described in the manuscript.
 4. **ML training**: Use scripts in dataset/14 Columns Model/ for primary models, or dataset/15 Columns Model with Source Quarter/ for temporal-split evaluation.
 
