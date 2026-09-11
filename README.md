@@ -31,21 +31,32 @@ This study provides a comprehensive assessment combining broad adolescent medica
 `
 ├── README.md
 ├── dataset/
-│   ├── 14 Columns Model/           # Primary model (no data leakage)
+│   ├── 14 Columns Model/                      # Primary model (leakage-free)
 │   │   ├── ObesityAll_14_Drugs_Adolescent_14Columns_Imputed.xlsx
 │   │   ├── DiabeticsAll_10_Drugs_Adolescent_14Columns_Imputed.xlsx
 │   │   ├── Obesity_Selected4Drgs_Adolescent_14Columns_Imputed.xlsx
 │   │   ├── Diabetics_Selected4Drgs_Adolescent_14Columns_Imputed.xlsx
+│   │   ├── MLDimensionalityComparison46_32_14_Cols.xlsx
 │   │   ├── ML_Multiclass_Model_Comparison_Results.xlsx
-│   │   └── train_*.py                   # Training scripts
-│   ├── 15 Columns Leakage/          # Leakage analysis (severity_score included)
-│   ├── 15 Columns Model with Source Quarter/  # Temporal split model
-│   └── 16 Columns Leakage with Source Quarter/
+│   │   └── train_*.py                         # Training scripts for all cohorts
+│   ├── 15 Columns Leakage/                     # Leakage demonstration (includes severity_score)
+│   │   ├── Target_Leakage_and_Accuracy_Drop.docx
+│   │   ├── ML_Multiclass_Model_Comparison_Results.xlsx
+│   │   └── train_*.py
+│   ├── 15 Columns Model with Source Quarter/  # Temporal evaluation model (chronological split)
+│   │   ├── train_obesity_all14_temporal.py    # Temporal ML validation (Macro-F1 0.402 / 0.635)
+│   │   ├── Obesity_DiabetesCounts_2021_2025_v2.xlsx
+│   │   ├── MLDimensionalityComparison46_32_14_Cols.xlsx
+│   │   └── train_*.py
+│   ├── 16 Columns Leakage with Source Quarter/
+│   │   ├── Target_Leakage_and_Accuracy_Drop.docx
+│   │   └── ...
+│   └── *.zip                                  # Pre-packaged archives for each dataset model
 ├── Submission_Figures/
-│   ├── Fig1.eps / Fig1.png          # STROBE-compliant study flowchart
-│   ├── Fig2.eps / Fig2.png          # SOC-level AE distribution bar chart
-│   ├── Fig3.eps / Fig3.png          # Forest plots: metformin, atorvastatin, semaglutide
-│   ├── Fig4.eps / Fig4.png          # Forest plots: dapagliflozin, glargine, tirzepatide, empagliflozin
+│   ├── Fig1.eps / Fig1.png                     # STROBE-compliant study flowchart
+│   ├── Fig2.eps / Fig2.png                     # SOC-level AE distribution bar chart
+│   ├── Fig3.eps / Fig3.png                     # Forest plots: metformin, atorvastatin, semaglutide
+│   ├── Fig4.eps / Fig4.png                     # Forest plots: dapagliflozin, glargine, tirzepatide, empagliflozin
 │   ├── S1_Fig_Detailed_Flowchart.eps / .png   # Supplementary detailed flowchart
 │   └── S2_Fig_SHAP_Importance.eps / .png      # Supplementary SHAP feature importance
 └── Supplementary_Information/
@@ -56,8 +67,8 @@ This study provides a comprehensive assessment combining broad adolescent medica
     ├── S5_Table_Hyperparameter_Search_Space.docx
     ├── S6_Table_Predictor_Leakage_Audit.docx
     ├── S7_Table_Temporal_Shift.docx
-    ├── S8_Table_Complete_Signal_Detection.docx   # 2,098 drug-event pairs
-    └── S9_Table_Quarterly_Reporting_Volume.docx  # 2021Q1–2025Q4 quarterly volumes
+    ├── S8_Table_Complete_Signal_Detection.docx  # 2,098 drug-event pairs
+    └── S9_Table_Quarterly_Reporting_Volume.docx # 2021Q1–2025Q4 quarterly reporting volumes
 `
 
 ---
