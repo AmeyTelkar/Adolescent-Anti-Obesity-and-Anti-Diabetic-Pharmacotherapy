@@ -5,6 +5,7 @@
 [![PLOS ONE](https://img.shields.io/badge/Journal-PLOS%20ONE-blue)](https://journals.plos.org/plosone/)
 [![FAERS](https://img.shields.io/badge/Data-FDA%20FAERS-green)](https://www.fda.gov/drugs/questions-and-answers-fdas-adverse-event-reporting-system-faers/fda-adverse-event-reporting-system-faers-public-dashboard)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22767356.svg)](https://doi.org/10.5281/zenodo.22767356)
 
 **Version: V15 (Final PLOS ONE Submission)**
 
@@ -66,7 +67,7 @@ This study provides a comprehensive assessment combining broad adolescent medica
     ├── S5_Table_Hyperparameter_Search_Space.docx
     ├── S6_Table_Predictor_Leakage_Audit.docx
     ├── S7_Table_Temporal_Shift.docx
-    ├── S8_Table_Complete_Signal_Detection.docx  # 2,098 drug-event pairs
+    ├── S8_Table_Complete_Signal_Detection_FULL.xlsx  # 2,098 drug-event pairs
     └── S9_Table_Quarterly_Reporting_Volume.docx # 2021Q1–2025Q4 quarterly reporting volumes
 `
 
@@ -168,7 +169,7 @@ This study provides a comprehensive assessment combining broad adolescent medica
 ## How to Reproduce
 
 1. **Data**: Download quarterly FAERS ASCII files from [FDA FAERS](https://www.fda.gov/drugs/questions-and-answers-fdas-adverse-event-reporting-system-faers/fda-adverse-event-reporting-system-faers-public-dashboard) for 2021Q1–2025Q4.
-2. **Preprocessing**: Follow the pipeline specification in S4 Table (deduplication, age filtering, drug normalisation, MedDRA coding). *Note: MedDRA version 26.0 was used for this study. Due to proprietary licensing by the MSSO, the MedDRA Desktop Browser cannot be distributed in this repository. Researchers must obtain a valid license from [MedDRA (MSSO)](https://www.meddra.org/) to reproduce the exact coding.*
+2. **Preprocessing**: Follow the pipeline specification in S4 Table (deduplication, age filtering, drug normalisation, MedDRA coding). *Note: MedDRA version 28.1 was used for this study. Due to proprietary licensing by the MSSO, the MedDRA Desktop Browser cannot be distributed in this repository. Researchers must obtain a valid license from [MedDRA (MSSO)](https://www.meddra.org/) to reproduce the exact coding.*
 3. **Signal detection**: Apply four disproportionality methods (ROR, PRR, IC, EBGM) as described in the manuscript.
 4. **ML training**: Use scripts in dataset/14 Columns Model/ for primary models, or dataset/15 Columns Model with Source Quarter/ for temporal-split evaluation.
 
