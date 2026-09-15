@@ -5,9 +5,9 @@
 [![Journal: PLOS ONE](https://img.shields.io/badge/Journal-PLOS%20ONE-blue)](https://journals.plos.org/plosone/)
 [![Data: FDA FAERS](https://img.shields.io/badge/Data-FDA%20FAERS-green)](https://www.fda.gov/drugs/questions-and-answers-fdas-adverse-event-reporting-system-faers/fda-adverse-event-reporting-system-faers-public-dashboard)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.22767356-blue)](https://doi.org/10.5281/zenodo.22767356)
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.22767355-blue)](https://doi.org/10.5281/zenodo.22767355)
 
-**Version: V17 (Final PLOS ONE Submission)**
+**Version: V17.1 (Final PLOS ONE Submission)**
 
 ---
 
